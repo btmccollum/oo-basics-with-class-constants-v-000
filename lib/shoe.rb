@@ -9,7 +9,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
-    BRANDS = BRANDS.uniq
+    BRANDS.uniq!
     binding.pry
     # brands.each do |x|
     #   if
@@ -22,6 +22,6 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
-BRANDS.uniq
+
 
 end
