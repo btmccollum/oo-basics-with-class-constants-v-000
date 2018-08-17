@@ -11,6 +11,7 @@ class Shoe
     BRANDS << brand
     BRANDS.any? do |x|
       delete_if x == true
+    end
     # binding.pry
   end
 
