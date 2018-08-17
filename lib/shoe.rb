@@ -4,12 +4,12 @@ class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
 
-  BRANDS = []
+  @@BRANDS = []
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
-    BRANDS.any? do |x|
+    @@BRANDS << brand
+    @@BRANDS.any? do |x|
       delete_if x == true
     end
     # binding.pry
