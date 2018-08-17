@@ -8,8 +8,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    if BRANDS.any?(brand) then delete
-    end
+    BRANDS << brand if !BRANDS.any?(brand)
     # binding.pry
   end
 
