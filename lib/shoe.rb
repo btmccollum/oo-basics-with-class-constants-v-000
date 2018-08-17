@@ -9,7 +9,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
-    BRANDS.constants.include?(brand)
+    BRANDS.class
     # brands.each do |x|
     #   if
 
