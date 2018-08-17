@@ -8,7 +8,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
+    delete_if(BRANDS.find brand)
     # binding.pry
   end
 
