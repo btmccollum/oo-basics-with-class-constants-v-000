@@ -8,8 +8,9 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
-    BRANDS.uniq
+    # BRANDS << brand
+    # brands.each do |x|
+    #   if
 
     # binding.pry
   end
