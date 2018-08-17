@@ -8,7 +8,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS.include?(brand) ? BRANDS << brand : brand
+    @BRANDS.uniq << brand
     # binding.pry
   end
 
