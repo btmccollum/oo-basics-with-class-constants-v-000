@@ -8,9 +8,9 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    # BRANDS << brand
+    BRANDS << brand
     # brands.each do |x|
-    #   if
+    #   if 
 
     # binding.pry
   end
