@@ -9,7 +9,8 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
-    BRANDS.any? { |x| x = brand}
+    BRANDS.any? do |x|
+      delete_if x == true
     # binding.pry
   end
 
