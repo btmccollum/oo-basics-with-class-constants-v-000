@@ -9,7 +9,6 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
-    puts BRANDS.uniq
     # binding.pry
   end
 
@@ -20,3 +19,5 @@ class Shoe
 
 
 end
+
+@BRANDS.uniq
